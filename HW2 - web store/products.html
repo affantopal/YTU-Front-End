@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <title>Tüm Ürünler</title>
+</head>
+<body>
+    <!-- navbar -->
+    <div id="navbar">
+        <!--marka ismi navbarın soluna, sayfa linkleri sağına (float: right; kullanarak) yerleştirildi.-->
+        <p style="text-align: left;">
+            dressUP! <!--marka ismi-->
+            <span style="float: right;">
+                <a class="yellow-link" href="index.html">Ana Sayfa</a>
+                &nbsp;
+                <a class="yellow-link" href="products.html">Tüm Ürünler</a>
+                &nbsp;
+                <a class="yellow-link" href="about.html">Hakkımızda</a>
+                &nbsp; <!--ekstra boşluk karakteri-->
+            </span>
+        </p>
+    </div>
+    
+    <!--Başlık ve Ürünler grid-container içine yerleştirildi-->
+    <div class="grid-container">
+        <!--ilk eleman 1. sütun çizgisinden 5. sütun çizgisine ayarlanarak içine başlık yerleştirildi-->
+        <div class="grid-header" style="grid-column-start: 1; grid-column-end: 5;">KADIN</div>
+        <!--Elemanlar başlık altında sırayla yerleştirildi. Her elemanın içinde bir adet ürün resmi, açıklaması ve fiyat yazmakta-->
+        <div class="grid-item disc">
+            <img src="pictures/female_black.jpg" alt="fe-black">
+            Kadın Relaxed Siyah T-Shirt<br>
+            <span style="text-decoration: line-through; margin: 0px;">500₺</span> 150₺
+        </div>
+        <div class="grid-item">
+            <img src="pictures/female_gray.jpg" alt="fe-gr">
+            Kadın Regular Parlak Koyu Yeşil T-Shirt <br> 550₺
+        </div>
+        <div class="grid-item">
+            <img src="pictures/female_pattern.jpg" alt="fe-pattern">
+           Kadın Relaxed Desenli T-Shirt <br> 630₺ 
+        </div>
+        <div class="grid-item">
+            <img src="pictures/female_pink.jpg" alt="fe-pink">
+            Kadın Oversize Pembe T-Shirt <br> 490₺
+        </div>
+        <!--Yeni başlık, ilki ile aynı işlem-->
+        <div class="grid-header" style="grid-column-start: 1; grid-column-end: 5;">ERKEK</div>
+        <!--ürünler-->
+        <div class="grid-item">
+            <img src="pictures/male_brown.jpg" alt="ma-brown">
+            Erkek Regular Cepli Kahverengi T-Shirt <br> 480₺
+        </div>
+        <div class="grid-item">
+            <img src="pictures/male_gray.jpg" alt="ma-gray">
+            Erkek Relaxed Gri T-Shirt <br> 530₺
+        </div>
+        <div class="grid-item disc">
+            <img src="pictures/male_pink.jpg" alt="ma-pink">
+            Erkek Regular Pembe T-Shirt <br>
+            <span style="text-decoration: line-through; margin: 0px;">520₺</span> 160₺
+        </div>
+        <div class="grid-item">
+            <img src="pictures/male_purple.jpg" alt="ma-purple">
+            Erkek Relaxed Yazılı Mor T-Shirt <br> 570₺
+        </div>
+        <div class="grid-item">
+            <img src="pictures/male_white.jpg" alt="ma-white">
+            Erkek Regular Beyaz T-Shirt <br> 440₺
+        </div>
+        <div class="grid-item">
+            <img src="pictures/male_yellow.jpg" alt="ma-yellow">
+            Erkek Regular Sarı T-Shirt <br> 470₺
+        </div>
+    </div>
+
+    <!--footer-->
+    <div id="contact">
+        <h3 style="margin-top: 5px; margin-bottom: 10px;">İletişim</h3>
+        <p style="margin-top: 0px; margin-bottom: 5px;">
+            Mail: <a class="yellow-link" href="mailto:ahmetbedri3@gmail.com">dressup@mail.up</a> <br>
+            Telefon: <a class="yellow-link" href="tel:+902124441122">+90 212 444 11 22</a>
+        </p>
+        <hr style="height: 1px; background-color: #b39500; border: none;">
+        <p style="margin-top: 5px; margin-bottom: 5px; text-align: center; color: #b39500;">© dressUP!</p>
+    </div>
+</body>
+</html>

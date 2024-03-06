@@ -1,0 +1,94 @@
+body{
+    font-family: "Dosis", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+    color: #b39500;
+}
+
+/*navbar tasarımı. "position" sayesinde daima üstte kalması sağlandı.*/
+#navbar {
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    width:100%;
+    font-weight: bold;
+    color: #b39500; 
+    background-color: #e6e6e6;
+}
+
+#contact {
+    padding: 5px;
+    margin: 0px;
+    width:100%;
+    color: black; 
+    font-weight: bold;
+    background-color: #e6e6e6;
+}
+
+/* Sitedeki linklerin diğer yazılar ile uyumunu sağlayabilmek için kullanıldı. */
+.yellow-link {
+    color: #b39500;
+    font-weight: bold;
+}
+
+/* Ürünler sayfasında kullanmak üzere hazırlandı. Ürünler bu grid'in içine yerleştirildi. */
+.grid-container {
+    margin-top: 72px; /* Navbar'ı fixed yaptığım için iç içe geçmekteydi. Pek uygun bir çözüm olmasa da işin içinden başka şekilde çıkamadım. */
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 5px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto;
+}
+
+/* Ürünler sayfasında kullanılan container'ın içine resimleri ve açıklamalarını yerleştirmek için kullanıldı */
+.grid-item {
+    background-color: #b39500;
+    color: black;
+    border: 2px solid #b39500;
+    font-size: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+}
+
+/* container'ın içinde indirimli ürünleri farklı renk ile belirginleştirmede kullanıldı */
+.grid-item.disc{
+    border: 2px solid #ff1a1a;
+    background-color: #ff1a1a;
+}
+
+/* grid elemanlarını kullanarak başlıklara yer verebilmek için kullanıldı. Düzen sağlamak adına kolaylık oluşturdu. */
+.grid-header{
+    color: #b39500;
+    font-size: 25px;
+    padding: 20px 0px;
+    text-align: left;
+}
+
+.grid-button{
+    color: #b39500;
+    background-color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+/* Resimlerin düzgün yerleştirilmesi için kullanıldı.*/
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2px;
+    max-width: 100%
+}
+
+#about{
+    margin-top: 90px; /* Navbar'ı fixed yaptığım için iç içe geçmekteydi. Yukarıda anlatılan durum ile aynı. */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
