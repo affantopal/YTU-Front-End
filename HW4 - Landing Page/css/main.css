@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Dosis", sans-serif;
+    box-sizing: border-box;
+}
+#home img{
+    transition: width 1s, height 1s;
+    width: 300px;
+    height: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 150px;
+    padding: 3px;
+    background-color: #2C7359;
+}
+#home img:hover{
+    transition: width 1s, height 1s;
+    transition-delay: 200ms;
+    width: 500px;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.container{
+    max-width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.box1{
+    text-align: center;
+    height: 120px;
+    padding: 20px;
+    border: 6px;
+    border-style: none none solid none;
+    border-color: #174031;
+    color: #174031;
+    background-color: #F2F2F2;
+    font-size: 1.8rem;
+
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: all .7s;
+}
+.box1:hover{
+    height: 400px;
+    background-color: #174031;
+    color: #F2F2F2;
+    border-style: solid;
+    flex-grow: 4.3;
+    flex-basis: 0;
+    transition: all .7s;
+}
+.box2{
+    text-align: center;
+    height: 220px;
+    padding: 10px;
+    border: 6px;
+    border-style: none none solid none;
+    border-color: #2C7359;
+    color: #2C7359;
+    background-color: #F2F2F2;
+    font-size: 1.8rem;
+
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: all .7s;
+}
+.box2:hover{
+    height: 400px;
+    background-color: #2C7359;
+    color: #F2F2F2;
+    border-style: solid;
+    flex-grow: 4.3;
+    flex-basis: 0;
+    transition: all .7s;
+}
+.box1 p, .box1 ul, .box2 p{
+    font-size: 1.4rem;
+    margin-top: 3px;
+    overflow: hidden;
+    visibility: hidden;
+}
+.box1:hover p, .box1:hover ul, .box2:hover p{
+    visibility: visible;
+}
+.box2 img{
+    width: 150px;
+    height: auto;
+    border-radius: 300px;
+    border: 3px;
+    border-style: solid;
+    border-color: #2C7359;
+}
+.box2:hover img{
+    border-color: #174031;
+    height: 80px;
+    width: auto;
+}

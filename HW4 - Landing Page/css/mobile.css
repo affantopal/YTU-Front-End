@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Dosis", sans-serif;
+    box-sizing: border-box;
+}
+
+#home img{
+    width: 150px;
+    height: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 150px;
+    padding: 3px;
+    background-color: #2C7359;
+
+}
+.container{
+    max-width: 80%;
+    height: 1350px;
+    margin: 0 auto;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.box1{
+    text-align: center;
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    border: 6px;
+    border-style: none none solid none;
+    border-color: #174031;
+    color: #174031;
+    background-color: #F2F2F2;
+    font-size: 1.8rem;
+}
+.box2{
+    text-align: center;
+    width: 500px;
+    padding: 10px;
+    border: 6px;
+    border-style: none none solid none;
+    border-color: #2C7359;
+    color: #2C7359;
+    background-color: #F2F2F2;
+    font-size: 1.8rem;
+}
+.box1 p, .box1 ul, .box2 p{
+    font-size: 1.4rem;
+    margin-top: 3px;
+    visibility: visible;
+}
+.box1 ul{
+    list-style-type: none;
+}
+.box1 a{
+    color: #174031;
+}
+.box2 img{
+    width: 150px;
+    height: auto;
+    border-radius: 300px;
+    border: 3px;
+    border-style: solid;
+    border-color: #2C7359;
+}
+#more-info{
+    visibility: hidden;
+}
